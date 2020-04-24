@@ -1,25 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Header from "./js/components/Header";
+import TodoList from "./js/components/TodoList";
+import CreateTodo from "./js/components/CreateTodo";
 
 function App() {
+
+  const [todos, setTodos] = useState([
+    {id : 1, description : 'task1', status : 'done'},
+    {id : 2, description : 'task2', status : 'pending'},
+    {id : 3, description : 'task3', status : 'pending'}
+  ]);
+
+  const addTodo = (newTodoDesc) => {
+    // BACKEND
+  }
+
+  const markAsDone = (todoId) => {
+    // BACKEND
+
+  }
+
+  const deleteTodo = (todoId) => {
+    // BACKEND
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <Header />
+        <div className="App">
+          <main role="main" className="container">
+            <div className="row">
+              <div className="col-12">
+                <h1>TODO List</h1>
+              </div>
+            </div>
+            <CreateTodo addTodo={addTodo}/>
+            <TodoList todos={todos} markAsDone={markAsDone} deleteTodo={deleteTodo}/>
+          </main>
+        </div>
+      </>
   );
 }
 
