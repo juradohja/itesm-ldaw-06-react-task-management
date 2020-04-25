@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Todo from './Todo';
 
 const TodoList = ({todos, markAsDone, deleteTodo}) => {
@@ -17,7 +17,7 @@ const TodoList = ({todos, markAsDone, deleteTodo}) => {
                     <tbody>
                         {todos.map((todo, i) => {
                             return (
-                                <Todo todo={todo} markAsDone={markAsDone} deleteTodo={deleteTodo}/>
+                                <Todo key={i} todo={todo} markAsDone={markAsDone} deleteTodo={deleteTodo}/>
                             )
                         })}
                     </tbody>
@@ -25,6 +25,6 @@ const TodoList = ({todos, markAsDone, deleteTodo}) => {
             </div>
         </div>
     )
-}
+};
 
 export default TodoList;

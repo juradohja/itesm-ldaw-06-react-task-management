@@ -1,17 +1,17 @@
 import React, {useState} from "react";
 
-const CreateTodo = (addTodo) => {
+const CreateTodo = ({addTodo}) => {
 
     const [newTodoDesc, setNewTodoDesc] = useState('');
 
     const handleNewTodoChange = (event) => {
         setNewTodoDesc(event.target.value);
-    }
+    };
 
-    const handleAddTodo = (event) => {
+    const handleAddTodo = (_event) => {
         addTodo(newTodoDesc);
         setNewTodoDesc('');
-    }
+    };
 
     return (
         <div className="row mb-3">
@@ -21,6 +21,7 @@ const CreateTodo = (addTodo) => {
                            id="taskDescription"
                            placeholder="I have to..."
                            className="form-control"
+                           value={newTodoDesc}
                            onChange={handleNewTodoChange}/>
                     <div className="input-group-append">
                         <input type="button"
@@ -32,6 +33,6 @@ const CreateTodo = (addTodo) => {
             </div>
         </div>
     )
-}
+};
 
 export default CreateTodo;

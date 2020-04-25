@@ -1,14 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 
 const Todo = ({todo, markAsDone, deleteTodo}) => {
 
-    const handleMarkAsDone = (event) => {
+    const handleMarkAsDone = (_event) => {
         markAsDone(todo.id);
-    }
+    };
     
-    const handleDeleteTodo = (event) => {
+    const handleDeleteTodo = (_event) => {
         deleteTodo(todo.id);
-    }
+    };
 
     return (
 
@@ -17,19 +17,19 @@ const Todo = ({todo, markAsDone, deleteTodo}) => {
                 <td>{todo.description}</td>
                 <td>
                     {todo.status === 'pending' && (
-                        <a href="#"
-                           className="text-primary"
-                           onClick={handleMarkAsDone}>Done</a>
+                        <button
+                                className="btn btn-link"
+                                onClick={handleMarkAsDone}>Done</button>
                     )}
-                    {todo.status == 'done' && (
-                        <a href="#"
-                           className="text-danger"
-                           onClick={handleDeleteTodo}>Delete</a>
+                    {todo.status === 'done' && (
+                        <button
+                                className="btn btn-link text-danger"
+                                onClick={handleDeleteTodo}>Delete</button>
                     )}
                 </td>
             </tr>
         
     )
-}
+};
 
 export default Todo;

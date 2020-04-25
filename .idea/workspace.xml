@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f99f91d-cc1b-4476-b165-36e65720f8b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/HomepageController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/TasksController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/connection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/knexfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/20200307164021_create_tasks_table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Task.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/web.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/CreateTodo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/Todo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/TodoList.js" afterDir="false" />
+    <list default="true" id="5f99f91d-cc1b-4476-b165-36e65720f8b1" name="Default Changelist" comment="Manage requests through Express server and re-render accordingly">
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/HomepageController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/TasksController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/TasksController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knexfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/knexfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/CreateTodo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/CreateTodo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/Todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/TodoList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +54,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -67,8 +64,18 @@
       <recent name="D:\Documents\ITC\9ITC\LabWeb\react-task-management" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.npm all">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm all" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="all" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -81,6 +88,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.npm all" />
+      <item itemvalue="npm.npm start" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -92,29 +104,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587762927111</updated>
-      <workItem from="1587762929112" duration="6688000" />
+      <workItem from="1587762929112" duration="22894000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Manage requests through Express server and re-render accordingly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Manage requests through Express server and re-render accordingly" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1515" height="190" key="GridCell.Tab.0.bottom" timestamp="1587769620802">
+    <state x="-1697" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587773291502">
       <screen x="-1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="190" key="GridCell.Tab.0.bottom/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587769620802" />
-    <state width="1515" height="190" key="GridCell.Tab.0.center" timestamp="1587769620802">
+    <state x="-1697" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587773291502" />
+    <state x="-1421" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587788553678">
       <screen x="-1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="190" key="GridCell.Tab.0.center/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587769620802" />
-    <state width="1515" height="190" key="GridCell.Tab.0.left" timestamp="1587769620802">
+    <state x="-1421" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587788553678" />
+    <state x="-1537" y="0" key="CommitChangelistDialog2" timestamp="1587789533089">
       <screen x="-1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="190" key="GridCell.Tab.0.left/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587769620802" />
-    <state width="1515" height="190" key="GridCell.Tab.0.right" timestamp="1587769620802">
+    <state x="-1537" y="0" key="CommitChangelistDialog2/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587789533089" />
+    <state width="1515" height="190" key="GridCell.Tab.0.bottom" timestamp="1587772233524">
       <screen x="-1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="190" key="GridCell.Tab.0.right/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587769620802" />
+    <state width="1515" height="190" key="GridCell.Tab.0.bottom/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587772233524" />
+    <state width="1515" height="190" key="GridCell.Tab.0.center" timestamp="1587772233524">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="190" key="GridCell.Tab.0.center/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587772233524" />
+    <state width="1515" height="190" key="GridCell.Tab.0.left" timestamp="1587772233524">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="190" key="GridCell.Tab.0.left/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587772233524" />
+    <state width="1515" height="190" key="GridCell.Tab.0.right" timestamp="1587772233524">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="190" key="GridCell.Tab.0.right/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1587772233524" />
+    <state x="277" y="54" key="SettingsEditor" timestamp="1587776145057">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="54" key="SettingsEditor/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1587776145057" />
   </component>
 </project>
